@@ -1,3 +1,3 @@
 # igarbla.github.io
 
-Trying to integrate *gh-pages* with *Travis CI*
+Trying to integrate *gh-pages* with *Travis CI*.
