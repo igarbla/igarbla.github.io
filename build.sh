@@ -28,5 +28,4 @@ git config user.email "inaki@txorua.com"
 git config user.name "Iñaki García"
 git add -A .
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
-#git push --quiet origin master > /dev/null 2>&1
-git push --quiet https://${GH_TOKEN}@github.com/igarbla/igarbla.github.io.git master > /dev/null 2>&1
+git push --quiet origin master > /dev/null 2>&1
