@@ -4,3 +4,5 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
+
+[![Build Status](https://travis-ci.org/igarbla/igarbla.github.io.svg?branch=jekyll)](https://travis-ci.org/igarbla/igarbla.github.io)
