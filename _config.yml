@@ -47,4 +47,4 @@ exclude:
   - vendor/ruby/
   - build.sh
 
- logo: /assets/avatar.png
+logo: "/assets/avatar.png"
