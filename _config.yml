@@ -38,13 +38,13 @@ remote_theme: igarbla/jekyll-theme-oria
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
- - Gemfile
- - Gemfile.lock
- - node_modules
- - vendor/bundle/
- - vendor/cache/
- - vendor/gems/
- - vendor/ruby/
- - build.sh
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - build.sh
 
  logo: /assets/avatar.png
