@@ -3,6 +3,8 @@ script: "./build.sh"
 branches:
   only:
   - jekyll
+  except:
+  - master
 rvm:
 - 2.4.0
 env:
