@@ -1,8 +1,8 @@
 language: ruby
 #script: "./build.sh"
-branches:
-  only:
-  - jekyll
+#branches:
+#  only:
+#  - jekyll
 rvm:
   - 2.4.0
 env:
@@ -16,5 +16,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   local_dir: _site
+  on:
+    branch: jekyll
   repo: igarbla/igarbla.github.io
   target_branch: master
