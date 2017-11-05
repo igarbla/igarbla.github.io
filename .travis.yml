@@ -17,6 +17,6 @@ deploy:
   skip_cleanup: true
   local_dir: _site
   on:
-    branch: master
+    branch: jekyll
   repo: igarbla/igarbla.github.io
   target_branch: master
