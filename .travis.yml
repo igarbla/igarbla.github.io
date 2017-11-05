@@ -1,22 +1,12 @@
 language: ruby
-#script: "./build.sh"
-#branches:
-#  only:
-#  - jekyll
+script: "./build.sh"
+branches:
+  only:
+  - jekyll
+  except:
+  - master
 rvm:
-  - 2.4.0
+- 2.4.0
 env:
   global:
     secure: oYZOKLt62jrtB30soWPOMbMD9QBvv1QDyn2HtLHEqTc1zt5eW81kYmCKTlpLFTrPEZIuxF4mt1eoEpHp8jhW+A4dRNoL5039I6f6Bgn/1sLf9uiFfIlPhqf/5HFtEMuc1sez7MdCyYBCZx763bkHWZVs+hnxRHFCydz38RpEEf+46fZ3tJZ8uWA/PudywHsPfMVeewfH6Ec+ZqC0OfHt2i2kRcUveGyQK6qPHk2nCNKNPOS2xZyIcjYXvpgjEY+uxdDfSRdtJVMYWAiR2qV0HISqgz++KatKDBGQycNx8UlKWkc0uf1kovEKC1R+uYbAbKdp3zJhB+9345EitNvsYCLduQXjSkXC0a7hJvDVJ2mmBwWpeth4Fu+vx8EeowlufW7sr12g2BOYPhYAM5xYxdG0qTNT1TdlSWB51zO8TgCZOEqB3I5iP/rEmTyzZnmZ5mGEMZuPNjzCIFitvY1LM3NhIftxqwcoWlhuXO5k8K6kt2Izs17lOtJrLY3W5GRbx28m09KmvkcYg/yEzb+Xw6jxKqBoU+PhhmOZa3b6SxQNXa2y7drzLGSWQNuGsFt4RWOkw26y7LP7xevOJ2sUcy86uenbTrTnzymDO9anspXVatEJBC4RZtyB691KGfcAHoY6z4jNgL1g5gU1OzbaFEIJO+lU6Z9cmadhM3C74jU=
-
-script:
-  - bundle exec jekyll build
-
-deploy:
-  provider: pages
-  skip_cleanup: true
-  local_dir: _site
-  on:
-    branch: jekyll
-  repo: igarbla/igarbla.github.io
-  target_branch: master
