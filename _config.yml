@@ -47,4 +47,7 @@ exclude:
   - vendor/ruby/
   - build.sh
 
+include:
+  - .nojekyll
+
 logo: "/assets/avatar.png"
