@@ -53,4 +53,9 @@ include:
 
 logo: "/assets/avatar.png"
 
-permalink: /blog/:title
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      permalink: /blog/:title
