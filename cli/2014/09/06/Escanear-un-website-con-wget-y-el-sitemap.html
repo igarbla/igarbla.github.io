@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Escanear un website con wget y el sitemap</title>
+  <meta name="description" content="Comando para escanear un website usando wget y el sitemap.xml del mismo sitio. A mi me resulta útil porque uso boost en Drupal para servir las páginas cachea...">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/cli/2014/09/06/Escanear-un-website-con-wget-y-el-sitemap.html">
+  <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Txorua Web Design">
+
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Source+Sans+Pro" rel="stylesheet">
+
+  
+</head>
+
+
+  <body>
+
+   <section id="site-navigation">
+
+  <a href="/"><img src="/assets/avatar.png" alt="Txorua Web Design"></a>
+
+  <input id="burger" type="checkbox" />
+  <label for="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+  </label>
+
+  <nav>
+    <ul>
+      
+    </ul>
+  </nav>
+
+</section>
+
+
+    <main id="main-content">
+
+      <article>
+        <header>
+          <h1>Escanear un website con wget y el sitemap</h1>
+        </header>
+
+        <p>Comando para escanear un website usando <a href="https://www.gnu.org/software/wget/">wget</a> y el <a href="http://www.sitemaps.org/">sitemap.xml</a> del mismo sitio. A mi me resulta útil porque uso <a href="https://www.drupal.org/project/boost">boost</a> en <a href="https://www.drupal.org">Drupal</a> para servir las páginas cacheadas pero éstas son generadas por el primer usuario anónimo que las visitas; de esta manera, me aseguro de que estén ya generadas.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wget <span class="nt">--quiet</span> http://www.example.com/sitemap.xml <span class="nt">--output-document</span> - | egrep <span class="nt">-o</span> <span class="s2">"http://www</span><span class="se">\.</span><span class="s2">example</span><span class="se">\.</span><span class="s2">com[^&lt;]+"</span> | wget <span class="nt">--spider</span> <span class="nt">-i</span> - <span class="nt">--wait</span> 1</code></pre></figure>
+
+<p>Visto en <a href="http://www.wezm.net/technical/2009/05/spider-a-site-with-wget-using-sitemap-xml/">www.wezm.net</a></p>
+
+
+
+
+    </article>
+
+    </main>
+
+  </body>
+</html>

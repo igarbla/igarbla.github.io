@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Lighttpd en Ubuntu</title>
+  <meta name="description" content="Instalación de lighttpd en Ubuntu:">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/lighttpd/ubuntu/2012/07/04/lighttpd-en-ubuntu.html">
+  <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Txorua Web Design">
+
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Source+Sans+Pro" rel="stylesheet">
+
+  
+</head>
+
+
+  <body>
+
+   <section id="site-navigation">
+
+  <a href="/"><img src="/assets/avatar.png" alt="Txorua Web Design"></a>
+
+  <input id="burger" type="checkbox" />
+  <label for="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+  </label>
+
+  <nav>
+    <ul>
+      
+    </ul>
+  </nav>
+
+</section>
+
+
+    <main id="main-content">
+
+      <article>
+        <header>
+          <h1>Lighttpd en Ubuntu</h1>
+        </header>
+
+        <p>Instalación de <strong>lighttpd</strong> en <strong>Ubuntu</strong>:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">sudo </span>apt-get install lighttpd php5-cgi php5-cli php5-common php5-gd php5-sqlite php5-dev php5-intl php-apc make
+<span class="nv">$ </span><span class="nb">sudo </span>lighty-enable-mod fastcgi userdir fastcgi-php</code></pre></figure>
+
+<p>Editar el archivo <em>php.ini</em> y poner</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>short_open_tag <span class="o">=</span> off
+<span class="nv">$ </span>date.timezone <span class="o">=</span> Europe/Madrid</code></pre></figure>
+
+<p>He editado tanto el php.ini en <em>/etc/php5/cgi</em> como el de <em>/etc/php5/cli</em>.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span><span class="nb">sudo </span>service lighttpd force-reload</code></pre></figure>
+
+<p>vía: <a href="http://blog.etxea.net/index.php/2008/04/09/entorno-personal-ligero-de-desarrollo-web-ubuntulighttpdphpsqlitesymfony">Moeblog</a> y las indicaciones del configurador de <a href="http://symfony.com">Symfony</a>.</p>
+
+
+
+
+    </article>
+
+    </main>
+
+  </body>
+</html>

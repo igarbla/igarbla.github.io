@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Instalar ruby con rvm sin privelegios de root</title>
+  <meta name="description" content="Si quieres instalar ruby con rvm en un entorno donde careces de privilegios de superusuario, como puede ser un hosting, debes debes deasativar autolibs:">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/ruby/rvm/2013/09/25/instalar-ruby-con-rvm-sin-privelegios-de-root.html">
+  <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Txorua Web Design">
+
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Source+Sans+Pro" rel="stylesheet">
+
+  
+</head>
+
+
+  <body>
+
+   <section id="site-navigation">
+
+  <a href="/"><img src="/assets/avatar.png" alt="Txorua Web Design"></a>
+
+  <input id="burger" type="checkbox" />
+  <label for="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+  </label>
+
+  <nav>
+    <ul>
+      
+    </ul>
+  </nav>
+
+</section>
+
+
+    <main id="main-content">
+
+      <article>
+        <header>
+          <h1>Instalar ruby con rvm sin privelegios de root</h1>
+        </header>
+
+        <p>Si quieres instalar ruby con <a href="http://rvm.io">rvm</a> en un entorno donde careces de privilegios de superusuario, como puede ser un hosting, debes debes deasativar <em>autolibs</em>:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>rvm autolibs disable
+<span class="nv">$ </span>rvm requirements
+<span class="nv">$ </span>rvm install ruby</code></pre></figure>
+
+<p>vía <a href="http://stackoverflow.com/a/17219765">How to install RVM system requirements without giving sudo for rvm user</a>.</p>
+
+
+
+
+    </article>
+
+    </main>
+
+  </body>
+</html>

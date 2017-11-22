@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Blog en Jekyll</title>
+  <meta name="description" content="Me he decidido a migrar el blog que tenía con Drupal 7 a Jekyll librándome de esta manera de tener que lidiar con una base de datos y consiguiendo una mejora...">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/jekyll/drupal/2013/12/13/Blog-en-Jekyll.html">
+  <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Txorua Web Design">
+
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Source+Sans+Pro" rel="stylesheet">
+
+  
+</head>
+
+
+  <body>
+
+   <section id="site-navigation">
+
+  <a href="/"><img src="/assets/avatar.png" alt="Txorua Web Design"></a>
+
+  <input id="burger" type="checkbox" />
+  <label for="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+  </label>
+
+  <nav>
+    <ul>
+      
+    </ul>
+  </nav>
+
+</section>
+
+
+    <main id="main-content">
+
+      <article>
+        <header>
+          <h1>Blog en Jekyll</h1>
+        </header>
+
+        <p>Me he decidido a migrar el blog que tenía con <a href="http://drupal.org">Drupal 7</a> a <a href="http://jekyllrb.com">Jekyll</a> librándome de esta manera de tener que lidiar con una base de datos y consiguiendo una mejora importante en el redimiento de la página.</p>
+
+<p>Primero he tenido que importar el contenido que tenía ya publicado sigiendo las instrucciones de <a href="http://import.jekyll.com">Jekyll import</a>, muy sencillo. Tras repasar los post y realizar alguna pequeña modificación, me he conectado al servidor y he creado un repositorio git. Ya instalé <a href="http://www.txorua.com/2013/09/25/instalar-ruby-con-rvm-sin-privelegios-de-root.html">jekyll en el server</a>, solo falta preparar un hook de git para cuando quiera publicar los post jekyll regenere el sitio. Está, quizas, ha sido la parte que más me ha costado, pero al final, como casi siempre, <a href="https://kristianfreeman.com/deploying_a_static_site/">la solución</a> es más sencilla de lo que parece. El fichero es el mismo que figura en <a href="http://jekyllrb.com/docs/deployment-methods/">Jekyll deployment methods</a>, salvo el <a href="http://es.wikipedia.org/wiki/Shebang">shebang</a>, que producía en un error de comando no encontrado; por lo que lo he cambiado por:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/home/user/.rvm/bin/rvm-shell 2.0.0-p247</span></code></pre></figure>
+
+<p>Ahora en local añado como remoto el repositorio recien creado en el server,</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git remote add deploy deployer@example.com:~/myrepo.git</code></pre></figure>
+
+<p>y con hacer</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">git push deploy master</code></pre></figure>
+
+<p>el blog queda actualizado.</p>
+
+
+
+
+    </article>
+
+    </main>
+
+  </body>
+</html>

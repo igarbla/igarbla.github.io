@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>RVM y Compass en Xubuntu 12.04</title>
+  <meta name="description" content="Para la instalación de rvm y compass he seguido los siguientes pasos:">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/ruby/rvm/compass/ubuntu/2012/06/26/rvm-y-compass-en-xubuntu-12-04.html">
+  <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Txorua Web Design">
+
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Source+Sans+Pro" rel="stylesheet">
+
+  
+</head>
+
+
+  <body>
+
+   <section id="site-navigation">
+
+  <a href="/"><img src="/assets/avatar.png" alt="Txorua Web Design"></a>
+
+  <input id="burger" type="checkbox" />
+  <label for="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+  </label>
+
+  <nav>
+    <ul>
+      
+    </ul>
+  </nav>
+
+</section>
+
+
+    <main id="main-content">
+
+      <article>
+        <header>
+          <h1>RVM y Compass en Xubuntu 12.04</h1>
+        </header>
+
+        <p>Para la instalación de <strong>rvm</strong> y <strong>compass</strong> he seguido los siguientes pasos:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>apt-get install build-essential openssl libreadline6 libreadline6-dev /
+curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 /
+libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison /
+subversion</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">curl <span class="nt">-L</span> https://get.rvm.io | bash <span class="nt">-s</span> stable <span class="nt">--ruby</span></code></pre></figure>
+
+<p>Editar .bashrc y añadir la siguiente línea:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="o">[[</span> <span class="nt">-s</span> <span class="s2">"/home/inaki/.rvm/scripts/rvm"</span> <span class="o">]]</span> <span class="o">&amp;&amp;</span> <span class="nb">source</span> <span class="s2">"/home/inaki/.rvm/scripts/rvm"</span>  <span class="c"># This loads RVM into a shell session.</span></code></pre></figure>
+
+<p>Para solucionar un error con las gemas:</p>
+
+<p>via: <a href="http://stackoverflow.com/questions/10659662/compass-gem-throwing-error">Compass gem throwing error</a>.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">rubygems-bundler-uninstaller</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">gem install compass</code></pre></figure>
+
+<p>Más información en la <a href="http://rvm.io/">página oficial de <strong>rvm</strong></a> y en <a href="http://compass.style.org/">la página de <strong>Compass</strong></a>.</p>
+
+
+
+
+    </article>
+
+    </main>
+
+  </body>
+</html>
