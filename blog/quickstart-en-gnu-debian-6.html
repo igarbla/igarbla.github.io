@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Quickstart en GNU/Debian 6</title>
+  <meta name="description" content="Instalación de quickstart con GNU/Debian 6:">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/blog/quickstart-en-gnu-debian-6">
+  <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Txorua Web Design">
+
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Source+Sans+Pro" rel="stylesheet">
+
+  
+</head>
+
+
+  <body>
+
+   <section id="site-navigation">
+
+  <a href="/"><img src="/assets/avatar.png" alt="Txorua Web Design"></a>
+
+  <input id="burger" type="checkbox" />
+  <label for="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+  </label>
+
+  <nav>
+    <ul>
+      
+    </ul>
+  </nav>
+
+</section>
+
+
+    <main id="main-content">
+
+      <article>
+        <header>
+          <h1>Quickstart en GNU/Debian 6</h1>
+        </header>
+
+        <p>Instalación de <strong>quickstart</strong> con <strong>GNU/Debian 6</strong>:</p>
+
+<ol>
+  <li>Instalación del sistema base.</li>
+  <li>Instalación de git.</li>
+  <li>Instalación de Vim.</li>
+  <li>Instalación de configuración de Vim.</li>
+  <li>Descarga de quickstart.
+git clone –branch master http://git.drupal.org/project/quickstart.git</li>
+  <li>Instalación de quickstart-prep.</li>
+  <li>Instalación de quickstart-1a-guest.</li>
+  <li>Instalación de quickstart-3-lamp.</li>
+  <li>Instalación de quickstart-6-dev.</li>
+</ol>
+
+<p>Después de crear un sitio con:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">drush qc <span class="nt">--domain</span><span class="o">=</span>misitio.dev <span class="nt">--profile</span><span class="o">=</span>minimal</code></pre></figure>
+
+<p>Hay que recargar squid3 con:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>service squid3 reload</code></pre></figure>
+
+<p><a href="http://drupal.org/node/788080">Documentación de Quickstart</a></p>
+
+
+
+
+    </article>
+
+    </main>
+
+  </body>
+</html>

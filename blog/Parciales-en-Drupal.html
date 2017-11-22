@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Parciales en Drupal</title>
+  <meta name="description" content="Recientemente me he encontrando repitiendo código html en un proyecto con Drupal y sabía que en frameworks como Jekyll se hace un uso de las parciales; en Dr...">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/blog/Parciales-en-Drupal">
+  <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Txorua Web Design">
+
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Source+Sans+Pro" rel="stylesheet">
+
+  
+</head>
+
+
+  <body>
+
+   <section id="site-navigation">
+
+  <a href="/"><img src="/assets/avatar.png" alt="Txorua Web Design"></a>
+
+  <input id="burger" type="checkbox" />
+  <label for="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+  </label>
+
+  <nav>
+    <ul>
+      
+    </ul>
+  </nav>
+
+</section>
+
+
+    <main id="main-content">
+
+      <article>
+        <header>
+          <h1>Parciales en Drupal</h1>
+        </header>
+
+        <p>Recientemente me he encontrando repitiendo código html en un proyecto con Drupal y sabía que en frameworks como Jekyll se hace un uso de las parciales; en Drupal existen las templates pero son para las páginas o tipos de contenido. Para incluir un parcial de HTML he utilizado la función:</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php">  <span class="cp">&lt;?php</span>
+    <span class="nx">theme_render_template</span><span class="p">(</span><span class="nv">$template_file</span><span class="p">,</span> <span class="nv">$variables</span><span class="p">);</span>
+  <span class="cp">?&gt;</span></code></pre></figure>
+
+<p>Así, si tenemos el siguiente código:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;</span>GNU<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>GPL<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Arduino<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>Processing<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span></code></pre></figure>
+
+<p>en la template que queramos incluirla pondremos:</p>
+
+<figure class="highlight"><pre><code class="language-php" data-lang="php">  <span class="cp">&lt;?php</span>
+    <span class="k">print</span> <span class="nx">theme_render_template</span><span class="p">(</span><span class="s1">'/path/to/partial/'</span><span class="p">,</span> <span class="nv">$vars</span> <span class="o">=</span> <span class="k">array</span><span class="p">());</span>
+  <span class="cp">?&gt;</span></code></pre></figure>
+
+
+
+
+    </article>
+
+    </main>
+
+  </body>
+</html>

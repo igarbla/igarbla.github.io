@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Jekyll Draft Workflow</title>
+  <meta name="description" content="Simple plugin para Jekyll para crear un workflow que permite tener borradores y publicarlos cuando gustes. Te bajas el plugin y lo guardas en la carpeta">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/blog/jekyll-draft-workflow">
+  <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Txorua Web Design">
+
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Source+Sans+Pro" rel="stylesheet">
+
+  
+</head>
+
+
+  <body>
+
+   <section id="site-navigation">
+
+  <a href="/"><img src="/assets/avatar.png" alt="Txorua Web Design"></a>
+
+  <input id="burger" type="checkbox" />
+  <label for="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+  </label>
+
+  <nav>
+    <ul>
+      
+    </ul>
+  </nav>
+
+</section>
+
+
+    <main id="main-content">
+
+      <article>
+        <header>
+          <h1>Jekyll Draft Workflow</h1>
+        </header>
+
+        <p>Simple plugin para <a href="http://jekyllrb.com">Jekyll</a> para crear un workflow que permite tener borradores y publicarlos cuando gustes.
+Te bajas <a href="https://gist.github.com/4689219">el plugin</a> y lo guardas en la carpeta</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="se">\_</span>plugins</code></pre></figure>
+
+<p>creas las carpetas</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="se">\_</span>drafts</code></pre></figure>
+
+<p>y</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="se">\_</span>plublish</code></pre></figure>
+
+<p>y ya está.</p>
+
+<p>Ahora solo has de crear tus posts en la carperta</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="se">\_</span>drafts</code></pre></figure>
+
+<p>sin necesidad de prefijar el archivo con la fecha; cuando hayas terminado y desees publicarlo, lo mueves a la carperta</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="se">\_</span>publish</code></pre></figure>
+
+<p>y el plugin se encarga se renombrar el archivo prefijandolo con la fecha de publicación y moverlo a la carpeta</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="se">\_</span>posts</code></pre></figure>
+<p>.</p>
+
+<p>A los borradores debes de incluirles en la cabecera una etiqueta</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">date: unpublished</code></pre></figure>
+
+<p>y una vez publicado el plugin lo sustituirá con el <span lang="en">timestamp</span> de la publicación.</p>
+
+<p>Para una mejor explicación visitar <a href="http://jeffreysambells.com/2013/02/01/jekyll-draft-publishing-plugin">la página del autor</a> del plugin.</p>
+
+
+
+
+    </article>
+
+    </main>
+
+  </body>
+</html>

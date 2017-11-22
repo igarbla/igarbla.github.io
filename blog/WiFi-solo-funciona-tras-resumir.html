@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>WiFi solo funciona tras resumir</title>
+  <meta name="description" content="Me he hecho con un portátil Asus i5 X552C y he instalado Linux Mint 16; todo perfecto salvo una pequeña molestia, la WiFi.">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/blog/WiFi-solo-funciona-tras-resumir">
+  <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Txorua Web Design">
+
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Source+Sans+Pro" rel="stylesheet">
+
+  
+</head>
+
+
+  <body>
+
+   <section id="site-navigation">
+
+  <a href="/"><img src="/assets/avatar.png" alt="Txorua Web Design"></a>
+
+  <input id="burger" type="checkbox" />
+  <label for="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+  </label>
+
+  <nav>
+    <ul>
+      
+    </ul>
+  </nav>
+
+</section>
+
+
+    <main id="main-content">
+
+      <article>
+        <header>
+          <h1>WiFi solo funciona tras resumir</h1>
+        </header>
+
+        <p>Me he hecho con un portátil Asus i5 X552C y he instalado Linux Mint 16; todo perfecto salvo una pequeña molestia, la WiFi.</p>
+
+<p>Resulta que al encender no levanta la interfaz y no soy capaz de hacerlo de ninguna de las manera. La tarjeta la detecta pero parece que hay un «Hard Block» sobre ella y el switch de wifi (alt-f2) no funciona. Sorprendentemente, si resumo el portátil y lo vuelvo a enceder, la WiFi funciona.</p>
+
+<p>Todos los post que he visto dicen de hacer</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">sudo </span>rfkill unblock all</code></pre></figure>
+
+<p>pero nada de nada. Al final he encontrado uno que ha solucionado el asunto. <a href="http://karim-ouda.blogspot.com.es/2011/11/wifi-now-disabled-by-radio-killswitch.html?showComment=1397312837353#c7626831579031145368">Karim Ouda</a> en su blog comenta que puede haber un conflicto con un módulo adional de wifi y, en efecto, lo hay. En mi caso son los módulos <em>asus-nb-wmi</em> y <em>asus-wmi</em>. Los incluyo en el fichero</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">/etc/modprobe.d/blacklist.conf</code></pre></figure>
+
+<p>reinicio y tachán.</p>
+
+
+
+
+    </article>
+
+    </main>
+
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Problemas con .gitignore</title>
+  <meta name="description" content="Trasteando con jekyll me he topado con un problema que estaba empezando a causarme un dolor de cabeza. El caso que el fichero .gitignore del proyecto no func...">
+
+  <link rel="stylesheet" href="/assets/main.css">
+  <link rel="canonical" href="/blog/problemas-con-gitignore">
+  <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Txorua Web Design">
+
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Source+Sans+Pro" rel="stylesheet">
+
+  
+</head>
+
+
+  <body>
+
+   <section id="site-navigation">
+
+  <a href="/"><img src="/assets/avatar.png" alt="Txorua Web Design"></a>
+
+  <input id="burger" type="checkbox" />
+  <label for="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+  </label>
+
+  <nav>
+    <ul>
+      
+    </ul>
+  </nav>
+
+</section>
+
+
+    <main id="main-content">
+
+      <article>
+        <header>
+          <h1>Problemas con .gitignore</h1>
+        </header>
+
+        <p>Trasteando con <a href="http://jekyllrb.com">jekyll</a> me he topado con un problema que estaba empezando a causarme un dolor de cabeza. El caso que el fichero .gitignore del proyecto no funcionaba si tenía más de una línea lo cual es un problemón. El problema era que el final de línea no era correcto, no se el motivo, tal vez la última actualización de <a href="http://www.linuxmint.com">LMDE</a>, no lo se.</p>
+
+<p>La solución si usas vim</p>
+
+<figure class="highlight"><pre><code class="language-vim" data-lang="vim"><span class="p">:</span><span class="k">set</span> ff<span class="p">=</span>unix</code></pre></figure>
+
+<p>Vía <a href="http://stackoverflow.com/a/9531213">.gitignore file not ignoring</a>.</p>
+
+
+
+
+    </article>
+
+    </main>
+
+  </body>
+</html>
