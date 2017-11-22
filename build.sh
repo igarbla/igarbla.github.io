@@ -20,7 +20,7 @@ git clone https://${GH_TOKEN}@github.com/igarbla/igarbla.github.io.git ../igarbl
 
 # copy generated HTML site to `master' branch
 #cp -R _site/* ../igarbla.github.io.master
-rsync -avz _site/ ../igarbla.github.io.master
+rsync -avz --delete --exclude=.git/ _site/ ../igarbla.github.io.master/
 
 # commit and push generated content to `master' branch
 # since repository was cloned in write mode with token auth - we can push there

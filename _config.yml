@@ -48,4 +48,9 @@ exclude:
   - build.sh
   - .gitignore
 
+include:
+  - .nojekyll
+
 logo: "/assets/avatar.png"
+
+permalink: /blog/:title
