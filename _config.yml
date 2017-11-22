@@ -46,8 +46,6 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - build.sh
-
-include:
-  - .nojekyll
+  - .gitignore
 
 logo: "/assets/avatar.png"
