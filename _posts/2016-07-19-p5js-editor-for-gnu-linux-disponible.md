@@ -10,4 +10,4 @@ categories:
 
 Ya est&aacute; disponible para su descarga el [editor de P5js](https://github.com/processing/p5.js-editor/releases/download/v0.6.0/p5-linux.zip).
 
-![Editor P5js para GNU/Linux](/uploads/versions/p5js-editor---x----1026-743x---.png)
+![Editor P5js para GNU/Linux](/assets/images/posts/p5js-editor.png)

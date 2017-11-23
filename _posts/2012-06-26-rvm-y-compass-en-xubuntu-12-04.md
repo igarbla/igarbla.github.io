@@ -44,4 +44,4 @@ Más información en la [página oficial de **rvm**][rvm] y en [la página de **
 
 [stackoverflow]: http://stackoverflow.com/questions/10659662/compass-gem-throwing-error
 [rvm]: http://rvm.io/
-[compass]: http://compass.style.org/
+[compass]: http://compass-style.org/

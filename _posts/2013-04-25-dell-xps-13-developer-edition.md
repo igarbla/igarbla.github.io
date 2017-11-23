@@ -14,4 +14,4 @@ Un portátil con GNU/Linux preinstalado; Dell tiene un modelo dirigido a desarro
 
 [dell]: http://www.dell.com/es/empresas/p/xps-13-linux/pd
 
-[xps]: {{ site.baseurl }}/media/images/Dell-XPS-13-DE.jpeg
+[xps]: {{ site.baseurl }}/assets/images/posts/Dell-XPS-13.jpg

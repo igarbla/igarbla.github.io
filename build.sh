@@ -11,6 +11,7 @@ set -e
 
 # build site with jekyll, by default to `_site' folder
 bundle exec jekyll build
+bundle exec htmlproofer ./_site
 
 # cleanup
 rm -rf ../igarbla.github.io.master

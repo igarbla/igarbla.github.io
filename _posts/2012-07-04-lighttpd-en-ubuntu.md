@@ -26,7 +26,10 @@ He editado tanto el php.ini en */etc/php5/cgi* como el de */etc/php5/cli*.
 $ sudo service lighttpd force-reload
 {% endhighlight %}
 
-vía: [Moeblog][moeblog] y las indicaciones del configurador de [Symfony][symfony].
+vía: ~~Moeblog~~ y las indicaciones del configurador de [Symfony][symfony].
 
+{% comment %}
+Broken link
 [moeblog]: http://blog.etxea.net/index.php/2008/04/09/entorno-personal-ligero-de-desarrollo-web-ubuntulighttpdphpsqlitesymfony
+{% endcomment %}
 [symfony]: http://symfony.com
