@@ -33,6 +33,7 @@ plugins:
 
 # theme: minima
 remote_theme: igarbla/jekyll-theme-oria
+#theme: jekyll-theme-oria
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -52,6 +53,10 @@ include:
   - .nojekyll
 
 logo: "/assets/avatar.png"
+
+collections:
+  sections:
+    output: false
 
 defaults:
   - scope:
