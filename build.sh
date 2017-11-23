@@ -11,7 +11,7 @@ set -e
 
 # build site with jekyll, by default to `_site' folder
 bundle exec jekyll build
-bundle exec htmlproofer ./_site --disable-external
+#bundle exec htmlproofer ./_site --disable-external
 
 # cleanup
 rm -rf ../igarbla.github.io.master
