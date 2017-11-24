@@ -31,6 +31,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-sitemap
 
 # theme: minima
 remote_theme: igarbla/jekyll-theme-oria
