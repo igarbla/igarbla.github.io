@@ -7,4 +7,3 @@ sections:
   - promotional
 ---
 
-[![Build Status](https://travis-ci.org/igarbla/igarbla.github.io.svg?branch=jekyll)](https://travis-ci.org/igarbla/igarbla.github.io)
