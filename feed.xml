@@ -1,5 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-31T15:04:39+00:00</updated><id>/</id><title type="html">Txorua Web Design</title><subtitle>Diseñador web freelance. Diseño y rediseño de páginas web. Hago páginas web con HTML5, CSS3, Javascript. Utilizo Jekyll en proyectos simples y confío en Drupal como gestor de contenidos para proyectos más complejos.
-</subtitle><entry><title type="html">Dell XPS 13 Developer Edition</title><link href="/blog/dell-xps-13-developer-edition/" rel="alternate" type="text/html" title="Dell XPS 13 Developer Edition" /><published>2017-12-31T14:57:16+00:00</published><updated>2017-12-31T14:57:16+00:00</updated><id>/blog/dell-xps-13-developer-edition</id><content type="html" xml:base="/blog/dell-xps-13-developer-edition/">&lt;p&gt;&lt;img src=&quot;/assets/images/dell-xps-13.jpg&quot; alt=&quot;Dell XPS 13 Developer Edition&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-12-31T15:48:18+00:00</updated><id>/</id><title type="html">Txorua Web Design</title><subtitle>Diseñador web freelance. Diseño y rediseño de páginas web. Hago páginas web con HTML5, CSS3, Javascript. Utilizo Jekyll en proyectos simples y confío en Drupal como gestor de contenidos para proyectos más complejos.
+</subtitle><entry><title type="html">Post desde Netlify CMS</title><link href="/blog/post-desde-netlify-cms/" rel="alternate" type="text/html" title="Post desde Netlify CMS" /><published>2017-12-31T15:17:31+00:00</published><updated>2017-12-31T15:17:31+00:00</updated><id>/blog/post-desde-netlify-cms</id><content type="html" xml:base="/blog/post-desde-netlify-cms/">&lt;h1 id=&quot;título-1&quot;&gt;Título #1&lt;/h1&gt;
+
+&lt;h2 id=&quot;título-2&quot;&gt;Título #2&lt;/h2&gt;
+
+&lt;p&gt;Lorem ipsum dolor &lt;strong&gt;negrita&lt;/strong&gt; &lt;em&gt;itálica&lt;/em&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;code&lt;/code&gt; &lt;a href=&quot;https://www.txorua.com&quot;&gt;https://www.txorua.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;una cita cojonuda&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;uno&lt;/li&gt;
+  &lt;li&gt;dos&lt;/li&gt;
+  &lt;li&gt;lista&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/original.jpg&quot; alt=&quot;Star Wars&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Título #1</summary></entry><entry><title type="html">Dell XPS 13 Developer Edition</title><link href="/blog/dell-xps-13-developer-edition/" rel="alternate" type="text/html" title="Dell XPS 13 Developer Edition" /><published>2017-12-31T14:57:16+00:00</published><updated>2017-12-31T14:57:16+00:00</updated><id>/blog/dell-xps-13-developer-edition</id><content type="html" xml:base="/blog/dell-xps-13-developer-edition/">&lt;p&gt;&lt;img src=&quot;/assets/images/dell-xps-13.jpg&quot; alt=&quot;Dell XPS 13 Developer Edition&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Un portátil con GNU/Linux preinstalado; Dell tiene un modelo dirigido a desarrolladores, el &lt;a href=&quot;http://www.dell.com/es/empresas/p/xps-13-linux/pd&quot;&gt;XPS 13 Developer Edition&lt;/a&gt;.&lt;/p&gt;
 
@@ -72,23 +88,4 @@ task &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;deploy &lt;span class=&quot;k
 
 &lt;p&gt;donde &lt;em&gt;user&lt;/em&gt; es el nombre de usuario en el server, &lt;em&gt;server&lt;/em&gt; es el servidor y &lt;em&gt;path&lt;/em&gt; el directorio donde publicar el sitio.&lt;/p&gt;
 
-&lt;p&gt;Esta receta de publicación la he encontrando googleando un poco en &lt;a href=&quot;http://blog.grayghostvisuals.com/workflow/deploying-jekyll-with-rake/&quot;&gt;Deploying a Jekyll site with a Rakefile&lt;/a&gt;, donde la explicación del fichero Rakefile es más amplia y además incluye un screencast explicativo.&lt;/p&gt;</content><author><name></name></author><summary type="html">Un método rápido y sencillo de automatizar el deploy del website es utilizar rake, configurando una tarea que use rsync. Ésta se describe en el fichero Rakefile de la siguiente manera.</summary></entry><entry><title type="html">Parciales en Drupal</title><link href="/blog/Parciales-en-Drupal/" rel="alternate" type="text/html" title="Parciales en Drupal" /><published>2014-05-07T00:00:00+00:00</published><updated>2014-05-07T00:00:00+00:00</updated><id>/blog/Parciales-en-Drupal</id><content type="html" xml:base="/blog/Parciales-en-Drupal/">&lt;p&gt;Recientemente me he encontrando repitiendo código html en un proyecto con Drupal y sabía que en frameworks como Jekyll se hace un uso de las parciales; en Drupal existen las templates pero son para las páginas o tipos de contenido. Para incluir un parcial de HTML he utilizado la función:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;  &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
-    &lt;span class=&quot;nx&quot;&gt;theme_render_template&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$template_file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$variables&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Así, si tenemos el siguiente código:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;  &lt;span class=&quot;nt&quot;&gt;&amp;lt;ul&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;GNU&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;GPL&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Arduino&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;li&amp;gt;&lt;/span&gt;Processing&lt;span class=&quot;nt&quot;&gt;&amp;lt;/li&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ul&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;en la template que queramos incluirla pondremos:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;  &lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;theme_render_template&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'/path/to/partial/'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$vars&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
-  &lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><summary type="html">Recientemente me he encontrando repitiendo código html en un proyecto con Drupal y sabía que en frameworks como Jekyll se hace un uso de las parciales; en Drupal existen las templates pero son para las páginas o tipos de contenido. Para incluir un parcial de HTML he utilizado la función:</summary></entry></feed>
+&lt;p&gt;Esta receta de publicación la he encontrando googleando un poco en &lt;a href=&quot;http://blog.grayghostvisuals.com/workflow/deploying-jekyll-with-rake/&quot;&gt;Deploying a Jekyll site with a Rakefile&lt;/a&gt;, donde la explicación del fichero Rakefile es más amplia y además incluye un screencast explicativo.&lt;/p&gt;</content><author><name></name></author><summary type="html">Un método rápido y sencillo de automatizar el deploy del website es utilizar rake, configurando una tarea que use rsync. Ésta se describe en el fichero Rakefile de la siguiente manera.</summary></entry></feed>
